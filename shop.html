@@ -1,0 +1,710 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--  Fancybox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <!-- FontAwesome JS -->
+    <script src="https://kit.fontawesome.com/2f158531bd.js" crossorigin="anonymous"></script>
+    <!-- css.gg -->
+    <link href='https://css.gg/css' rel='stylesheet'>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Online Shop</title>
+</head>
+<body>
+     <title>Hello, world!</title>
+   <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="navbar-collapse">
+                <div class="col-lg-7 d-lg-inline d-sm-none d-none">
+                    <a class="navbar-brand col-lg-5" href="#">Tel:123456789</a>
+                    <a class="navbar-brand col-lg-6" href="#">Welcome to our store</a>
+                </div>
+                <form class="col-lg-5">
+                    <div class="form-row align-items-center">
+                        <div class="col-lg-4 d-lg-inline d-sm-none d-none">
+                            <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <option selected>AM</option>
+                                <option value="RU">RU</option>
+                                <option value="EN">EN</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-4 d-lg-inline d-sm-none d-none">
+                            <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <option selected>$</option>
+                                <option value="RU">&euro;</option>
+                            </select>
+                        </div>
+                           <a href="cart.html">
+                        <div class="col-lg-4 m-auto d-lg-inline ">
+                            <button type="button" class="btn btn-secondary col-lg-12">
+                                Cart <span class="badge badge-dark bg-success"></span>
+                            </button>
+                        </div>
+                    </a>
+                    </div>
+                </form>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-white bg-dark">
+            <div class="navbar-collapse d-sm-flex">
+                <div class="col-lg-6 col-sm-9">
+                    <a class="navbar-brand text-success" href="index.html">Watches Brands</a>
+                </div>
+                <div class="col-lg-6 col-sm-3 d-lg-flex justify-content-around">
+                    <div class="">
+                        <form class="form-inline my-2 my-lg-0 d-lg-inline d-sm-none d-lg-block d-none">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            My account
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" data-toggle="modal" data-target="#exampleModal" href="#">Login</a>
+                            <a class="dropdown-item" data-toggle="modal" data-target="#example1Modal"
+                                href="#">Register</a>
+                            <a class="dropdown-item" href="#">My Orders</a>
+                            <a class="dropdown-item" href="account.html">Account Settings</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav w-100 d-flex justify-content-between">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Women's Watch
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="product.html">Elegant Watches</a>
+                            <a class="dropdown-item" href="product.html">Romantic Watches</a>
+                            <a class="dropdown-item" href="product.html">Innovative Watches</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           Men's Watches
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="product.html">Mechanical Watches</a>
+                            <a class="dropdown-item" href="product.html">Quartz Watches</a>
+                            <a class="dropdown-item" href="product.html">Sports Watches</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           Kid's Watches
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="product.html">Sports Watches</a>
+                            <a class="dropdown-item" href="product.html">Girle Watches</a>
+                            <a class="dropdown-item" href="product.html">Boy Watches 3</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             Silver Jewelry
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="product1.html">Diamond Jewelry</a>
+                            <a class="dropdown-item" href="product1.html">Pearl Jewelry</a>
+                            <a class="dropdown-item" href="product1.html">Gemstones</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Fashion Jewelry
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="product1.html">Necklaces & Pendants</a>
+                            <a class="dropdown-item" href="product1.html">Trendy Rings</a>
+                            <a class="dropdown-item" href="product1.html">Bracelets</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Gold Jewelry
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="product1.html">Fine Earrings</a>
+                            <a class="dropdown-item" href="product1.html">Fine Jewelry Sets</a>
+                            <a class="dropdown-item" href="product1.html">Bracelets</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+      
+
+
+
+ </footer>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="example1Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">First Name</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput">
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Second Name</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Confirm Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-dark text-success">
+        <nav aria-label="breadcrumb" class="row">
+            <ol class="breadcrumb mt-3 col mr-auto  bg-dark text-success">
+                <li class="breadcrumb-item"><a class="bg-dark text-success"  href="shop.html">Watches</a></li>
+                 <li class="breadcrumb-item"><a class="bg-dark text-success"  href="shop.html">  Swiss Functional</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Watch Men's</li>
+            </ol>
+            <form action="" class="form-inline col-12 col-md-auto mb-2 mb-md-0  bg-dark text-success">
+                <label for="sortBy" class="mr-2  bg-dark text-success">Sort By</label>
+                <select class="custom-select" id="sortBy">
+                    <option class=" bg-dark text-success" value="1">Price: Low to High</option>
+                    <option class=" bg-dark text-success" value="2">Price: High to Low</option>
+                    <option class=" bg-dark text-success" value="3">Rating</option>
+                </select>
+            </form>
+        </nav>
+        <div class="row">
+            <div class="col-12 ">
+                <h2 class="text-success font-weight-bold">Swiss Functional Watch</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="row">
+                    <div class="col-3">
+                        
+                        <a class="border d-inline-block m-1 p-1" data-fancybox="gallery" href="image/watch14.png"><img
+                                class="img-fluid" src="image/watch14.png"></a>
+                        <a class="border d-inline-block m-1 p-1" data-fancybox="gallery" href="image/watch15.png"><img
+                                class="img-fluid" src="image/watch15.png"></a>
+                        <a class="border d-inline-block m-1 p-1" data-fancybox="gallery" href="image/watch16.png"><img
+                                class="img-fluid" src="image/watch16.png"></a>
+                    </div>
+                    <div class="col">
+                        <a class="" data-fancybox="gallery" href="image/watch13.png"><img class="img-fluid" src="image/watch13.png"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="font-weight-bold">$200</h3>
+                    </div>
+                </div>
+                <form class="w-100 row" action="">
+                    <div class="col-12 col-md-5">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text text-success" id="inputGroup-sizing-sm">Quantity</span>
+                            </div>
+                            <input type="text" class="form-control" aria-label="Sizing example input"
+                                   aria-describedby="inputGroup-sizing-sm" value="1">
+                        </div>
+                    </div>
+                  
+                    <div class="col-12 col-md-6">
+                       <a href="cart.html" class="btn btn-success" role="button">Add To Cart</a>
+                    </div>
+                </form>
+                
+                <div class="row">
+                    <div class="col-12">
+                        <p class="font-weight-bold my-2">Color</p>
+                    </div>
+                    <div class="col-12">
+                        <form action="">
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="black" name="customRadioInline1" class="custom-control-input">
+                                <label class="custom-control-label" for="black">Black</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="silver" name="customRadioInline1" class="custom-control-input"
+                                       checked>
+                                <label class="custom-control-label" for="silver">Silver</label>
+
+                            </div>
+                        </form>
+                    </div>
+                    <h5> Brand: Omega
+                    <br>
+               
+                    Range: Speedmaster Moonwatch Gender:
+                    <br>
+                      Men Case_size: 42 MM Case_material:
+                      <br>
+                     Steel Dial_type: Black Baton Crystal: 
+                     <br>
+                 Scratch-resistant sapphire Function: </h5>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="accordion w-100" id="accordionExample">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item" id="headingOne">
+                        <a class="nav-link text-success" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                           aria-controls="collapseOne">Overview</a>
+                    </li>
+                    <li class="nav-item " id="headingTwo">
+                        <a class="nav-link text-success" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                           aria-controls="collapseTwo">Rating</a>
+                    </li>
+                    <li class="nav-item" id="headingThree">
+                        <a class="nav-link text-success" href="#" data-toggle="collapse" data-target="#collapseThree"
+                           aria-expanded="false" aria-controls="collapseThree">Link</a>
+                    </li>
+                </ul>
+                <div class="card">
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                         data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p class="font-weight-bold">Key Features</p>
+                            <ul>
+                               
+                            
+                           <i>  Brand: Omega
+                  <i>  Range: Speedmaster Moonwatch</i>
+                    <i> Gender: Men</i>
+                   <i>  Case_size: 42 MM</i>
+                   <i>  Case_material: Steel</i>
+                   <i>  Dial_type: Black Baton</i>
+                  <i> Crystal: Scratch-resistant sapphire</i>
+                  <i>   Function: Chronograph</i>
+                </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <span class="w-25">Productivity</span>
+                            <div class="progress">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 10%" aria-valuenow="10"
+                                     aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="w-25">Performance</span>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 25%"
+                                     aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="w-25">Durability</span>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                     style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="w-25">Battery Life</span>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75"
+                                     aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="w-25">Shipping</span>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100"
+                                     aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
+                            There is no information
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center pb-4 mt-3">
+            <h4 class="font-weight-bold col-12 text-center mb-3">You may also like</h4>
+            <div class="carousel w-100 slide" id="moreCarousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="card m-2 col-md-2 col-12 text-center p-2 bg-dark">
+                                <img img src="image/watch11.png" alt="" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Product 1</h5>
+                                    <h5 class="text-danger">$ 122.99</h5>
+                                    <a href="product.html" class="btn btn-success">View details</a>
+                                </div>
+                            </div>
+                            <div class="card m-2 col-md-2 col-12 text-center p-2 bg-dark">
+                                <img img src="image/watch11.png" alt="" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Product 1</h5>
+                                    <h5 class="text-danger">$ 122.99</h5>
+                                    <a href="product.html" class="btn btn-success">View details</a>
+                                </div>
+                            </div>
+                            <div class="card m-2 col-md-2 col-12 text-center p-2 bg-dark">
+                                <img img src="image/watch11.png" alt="" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Product 1</h5>
+                                    <h5 class="text-danger">$ 122.99</h5>
+                                    <a href="product.html" class="btn btn-success">View details</a>
+                                </div>
+                            </div>
+                            <div class="card m-2 col-md-2 col-12 text-center p-2 bg-dark">
+                                <img img src="image/watch11.png" alt="" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Product 1</h5>
+                                    <h5 class="text-danger">$ 122.99</h5>
+                                    <a href="product.html" class="btn btn-success">View details</a>
+                                </div>
+                            </div>
+                            <div class="card m-2 col-md-2 col-12 text-center p-2 bg-dark">
+                            <img img src="image/watch11.png" alt="" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Product 1</h5>
+                                <h5 class="text-danger">$ 122.99</h5>
+                                <a href="product.html" class="btn btn-success">View details</a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="card m-2 col-md-2 col-12 text-center p-2 bg-dark">
+                                <img img src="image/watch11.png" alt="" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Product 1</h5>
+                                    <h5 class="text-danger">$ 122.99</h5>
+                                    <a href="product.html" class="btn btn-success">View details</a>
+                                </div>
+                            </div>
+                            <div class="card m-2 col-md-2 col-12 text-center p-2 bg-dark">
+                                <img img src="image/watch11.png" alt="" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Product 1</h5>
+                                    <h5 class="text-danger">$ 122.99</h5>
+                                    <a href="product.html" class="btn btn-success">View details</a>
+                                </div>
+                            </div>
+                            <div class="card m-2 col-md-2 col-12 text-center p-2 bg-dark">
+                                <img img src="image/watch11.png" alt="" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Product 1</h5>
+                                    <h5 class="text-danger">$ 122.99</h5>
+                                    <a href="product.html" class="btn btn-success">View details</a>
+                                </div>
+                            </div>
+                            <div class="card m-2 col-md-2 col-12 text-center p-2 bg-dark">
+                                <img img src="image/watch11.png" alt="" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Product 1</h5>
+                                    <h5 class="text-danger">$ 122.99</h5>
+                                    <a href="product.html" class="btn btn-success">View details</a>
+                                </div>
+                            </div>
+                            <div class="card m-2 col-md-2 col-12 text-center p-2 bg-dark">
+                            <img img src="image/watch11.png" alt="" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Product 1</h5>
+                                <h5 class="text-danger">$ 122.99</h5>
+                                <a href="product.html" class="btn btn-success">View details</a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="card m-2 col-md-2 col-12 text-center p-2 bg-dark">
+                                <img img src="image/watch11.png" alt="" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Product 1</h5>
+                                    <h5 class="text-danger">$ 122.99</h5>
+                                    <a href="product.html" class="btn btn-success">View details</a>
+                                </div>
+                            </div>
+                            <div class="card m-2 col-md-2 col-12 text-center p-2 bg-dark">
+                                <img img src="image/watch11.png" alt="" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Product 1</h5>
+                                    <h5 class="text-danger">$ 122.99</h5>
+                                    <a href="product.html" class="btn btn-success">View details</a>
+                                </div>
+                            </div>
+                            <div class="card m-2 col-md-2 col-12 text-center p-2 bg-dark">
+                                <img img src="image/watch11.png" alt="" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Product 1</h5>
+                                    <h5 class="text-danger">$ 122.99</h5>
+                                    <a href="product.html" class="btn btn-success">View details</a>
+                                </div>
+                            </div>
+                            <div class="card m-2 col-md-2 col-12 text-center p-2 bg-dark">
+                                <img img src="image/watch11.png" alt="" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Product 1</h5>
+                                    <h5 class="text-danger">$ 122.99</h5>
+                                    <a href="product.html" class="btn btn-success">View details</a>
+                                </div>
+                            </div>
+                            <div class="card m-2 col-md-2 col-12 text-center p-2 bg-dark">
+                            <img img src="image/watch11.png" alt="" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Product 1</h5>
+                                <h5 class="text-danger">$ 122.99</h5>
+                                <a href="product.html" class="btn btn-success">View details</a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="col mt-2">
+                <ul class="pagination justify-content-center cawrousel-indicators">
+                    <li class="page-item">
+                        <a class="page-link bg-dark text-success" href="#moreCarousel" role="button" data-slide="prev">Previous</a>
+                    </li>
+                    <li data-target="#moreCarousel" data-slide-to="0" class="page-item"><a class="page-link bg-dark text-success" href="shop.html">1</a></li>
+                    <li data-target="#moreCarousel" data-slide-to="1" class="page-item"><a class="page-link bg-dark text-success" href="shop.html">2</a></li>
+                    <li data-target="#moreCarousel" data-slide-to="2" class="page-item"><a class="page-link bg-dark text-success" href="shop.html">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link bg-dark text-success" href="#moreCarousel" role="button" data-slide="next">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+    
+
+<footer>
+  <div class="container-fluid">
+        <div class="row bg-dark text-light ">
+          <div class="col-md-3 border"> <p class="text-uppercase text-center">HELP</p> </div>
+          <div class="col-md-3 border"> <p class="text-uppercase text-center"> Services </p> </div>
+          <div class="col-md-3 border"> <p class="text-uppercase text-center"> Account </p> </div>
+          <div class="col-md-3 border"> <p class="text-uppercase text-center"> Terms and Conditions  </p> </div>
+          </div>
+
+        <div class="row" >
+          <div class="col-md-2  border d-md-block d-none bg-dark text-muted">
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Order Tracking</h5>
+    <ul class="list-unstyled text-muted">
+      <li>
+        <a href="#" class="text-muted">Return & Exchange</a>
+      </li><li>
+        <a href="#" class="text-muted">Customer Service/a>
+      </li>
+      <li>
+        <a href="#" class="text-muted">Shipping & Return</a>
+      </li>
+      <li>
+        <a href="#"class="text-muted"> Buyer Protection</a>
+      </li>
+      <li>
+        <a href="#" class="text-muted">Disputes & Reports,</a>
+      </li>
+    </ul>
+          </div>
+
+          <div class="col-md-2 border d-md-block d-none bg-dark text-muted">
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">COMPANY INFO</h5>
+    <ul class="list-unstyled">
+      <li>
+        <a href="#"class="text-muted" >About Us</a>
+      </li><li>
+        <a href="#" class="text-muted">Contact Us</a>
+      </li>
+      <li>
+     
+    </ul>
+          </div>
+          <div class="col-md-2 border d-md-block d-none bg-dark text-muted">
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">TERMS</h5>
+    <ul class="list-unstyled">
+      <li>
+        <a href="#"class="text-muted" >Privacy & Disclaimer</a>
+      </li><li>
+        <a href="#" class="text-muted">Terms of Condition</a>
+      </li>
+     
+      
+    </ul>
+          </div>
+         
+          <div class="col-md-2  border d-md-block d-none bg-dark text-muted">
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Shopping with us</h5>
+    <ul class="list-unstyled">
+      <li>
+        <a href="#" class="text-muted">Making payments</a>
+      </li><li>
+        <a href="#" class="text-muted">Delivery options</a>
+      </li>
+      <li>
+        <a href="#" class="text-muted">Buyer Protection</a>
+      </li>
+      <li>
+     
+    </ul>
+          </div>
+           <div class="col-md-2  border d-md-block d-none bg-dark text-muted">
+           <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Collaborate with us</h5>
+    <ul class="list-unstyled">
+      <li>
+        <a href="#"class="text-muted">Partnerships</a>
+      </li><li>
+        <a href="#"class="text-muted">Affiliate program</a>
+      </li>
+      
+    </ul>
+
+          </div>
+          <div class="col-md-2  border d-md-block d-none bg-dark text-muted">
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Community</h5>
+    <ul class="list-unstyled">
+      
+      <li>
+        <a href="#" class="text-muted">Announcements</a>
+      </li>
+      <li>
+        <a href="#" class="text-muted">Answer center</a>
+      </li>
+      <li>
+        <a href="#" class="text-muted">Discussion boards</a>
+      </li>
+      <li>
+        <a href="#" class="text-muted">Groups</a>
+      </li>
+    </ul>
+          </div>
+        </div>
+        <div class="row bg-dark">
+          <div class="col-md-2 text-muted align-middle d-none d-md-block" style="font-size: 20px;">You can find us on:</div>
+           <section id="lab_social_icon">
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="container">
+        <div class="text-center center-block">
+                <a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+              <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+              <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+              <a href="mailto:#"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+    </div>
+</div>
+</section>
+          <div class="col-md-7"> <p class="text-md-right text-center text-muted" style="font-size: 20px;"> Tumo Center For Creative Technologies</p> </div>
+
+</footer>
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+
+    <!--  Fancybox JS  -->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <!--  custom JS  -->
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
